@@ -1,0 +1,20 @@
+.chrome-profile/
+.edge-profile/
+.agents/
+.codex/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+
+# Logs and local env files
+*.log
+.env
+.env.*

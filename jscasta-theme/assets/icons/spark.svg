@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+  <title id="title">Spark icon</title>
+  <rect width="80" height="80" rx="20" fill="#111111"/>
+  <path d="M40 8 46 32 70 40 46 48 40 72 34 48 10 40 34 32 40 8Z" fill="#C9A45C"/>
+  <path d="M22 12 25 24 37 27 25 30 22 42 19 30 7 27 19 24 22 12ZM62 47l3 10 10 3-10 3-3 10-3-10-10-3 10-3 3-10Z" fill="#F4F1EA"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 860" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial portrait artwork</title>
+  <desc id="desc">A refined portrait-style illustration for JSCASTA with warm gold and dark theatrical lighting.</desc>
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F1EA"/>
+      <stop offset=".42" stop-color="#C9A45C"/>
+      <stop offset="1" stop-color="#09111F"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="860" rx="14" fill="#111111"/>
+  <rect x="28" y="28" width="664" height="804" rx="10" fill="none" stroke="#C9A45C" stroke-opacity=".35"/>
+  <circle cx="360" cy="244" r="162" fill="url(#a)" opacity=".28"/>
+  <path d="M351 188c65 0 118 53 118 118v36c0 65-53 118-118 118s-118-53-118-118v-36c0-65 53-118 118-118Z" fill="#1D1D1D"/>
+  <path d="M246 316c15-78 66-123 142-116 48 4 79 29 94 76-58-24-134-11-236 40Z" fill="#050505"/>
+  <path d="M208 510c37-45 86-68 146-68 63 0 115 23 154 69 48 57 73 144 78 260H134c6-117 30-204 74-261Z" fill="#050505"/>
+  <path d="M254 570c72 39 145 39 221 0l50 201H204l50-201Z" fill="#F4F1EA"/>
+  <path d="M304 463c34 27 70 27 108 0v63c-39 28-75 28-108 0v-63Z" fill="#C9A45C"/>
+  <path d="M119 116h174M119 148h120M498 682h103M466 714h135M505 746h96" stroke="#C9A45C" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+  <text x="70" y="802" fill="#F4F1EA" fill-opacity=".12" font-family="Arial Narrow, sans-serif" font-size="70" font-weight="700">ATTENTION</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Performance video thumbnail</title>
+  <desc id="desc">Cinematic stage thumbnail with audience lights and JSCASTA branding.</desc>
+  <defs>
+    <linearGradient id="v" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09111F"/>
+      <stop offset=".58" stop-color="#050505"/>
+      <stop offset="1" stop-color="#7A1E1E"/>
+    </linearGradient>
+    <radialGradient id="beam" cx="50%" cy="10%" r="70%">
+      <stop offset="0" stop-color="#C9A45C" stop-opacity=".42"/>
+      <stop offset=".5" stop-color="#C9A45C" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#v)"/>
+  <rect width="1280" height="720" fill="url(#beam)"/>
+  <path d="M0 490c168-80 306-112 453-76 132 32 248 126 395 128 153 1 277-76 432-99v277H0V490Z" fill="#050505" opacity=".78"/>
+  <g fill="#C9A45C" opacity=".72">
+    <circle cx="120" cy="504" r="5"/><circle cx="190" cy="478" r="4"/><circle cx="288" cy="461" r="6"/>
+    <circle cx="1010" cy="472" r="5"/><circle cx="1105" cy="450" r="4"/><circle cx="1180" cy="485" r="6"/>
+  </g>
+  <rect x="486" y="140" width="308" height="398" rx="24" fill="#111111" stroke="#C9A45C" stroke-width="3"/>
+  <path d="M641 214c56 0 101 45 101 101s-45 101-101 101-101-45-101-101 45-101 101-101Z" fill="#1B1B1B"/>
+  <path d="M540 315c19-71 63-108 132-98 45 7 72 37 78 88-63-28-132-25-210 10Z" fill="#050505"/>
+  <text x="80" y="122" fill="#F4F1EA" fill-opacity=".13" font-family="Arial Narrow, sans-serif" font-size="118" font-weight="700">SEE THE EXPERIENCE</text>
+  <text x="83" y="642" fill="#C9A45C" font-family="Arial Narrow, sans-serif" font-size="42" font-weight="700">JSCASTA LIVE</text>
+</svg>

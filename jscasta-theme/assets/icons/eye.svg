@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+  <title id="title">Eye icon</title>
+  <circle cx="40" cy="40" r="31" fill="#111111"/>
+  <path d="M13 40s9-17 27-17 27 17 27 17-9 17-27 17-27-17-27-17Z" fill="none" stroke="#C9A45C" stroke-width="3"/>
+  <circle cx="40" cy="40" r="10" fill="#F4F1EA"/>
+  <circle cx="40" cy="40" r="4" fill="#7A1E1E"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+  <title id="title">Playing card icon</title>
+  <rect x="16" y="10" width="42" height="58" rx="7" fill="#111111" stroke="#C9A45C" stroke-width="2"/>
+  <rect x="24" y="18" width="42" height="58" rx="7" fill="#F4F1EA" stroke="#111111" stroke-width="2"/>
+  <path d="M45 33c-6-7-16 1-9 9l9 10 9-10c7-8-3-16-9-9Z" fill="#7A1E1E"/>
+</svg>
