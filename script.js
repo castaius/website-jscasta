@@ -646,9 +646,30 @@ initCustomCursor();
 if (form && formNote) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      formNote.textContent =
+        form.dataset.errorMessage ||
+        "Please complete the required fields before sending your inquiry.";
+      formNote.classList.add("is-error");
+      return;
+    }
+
+    const formData = new FormData(form);
+    const recipient = form.dataset.recipient || "booking@jscasta.com";
+    const subject = form.dataset.subject || "JSCASTA event inquiry";
+    const body = Array.from(formData.entries())
+      .filter(([, value]) => String(value).trim())
+      .map(([key, value]) => `${key.replace(/-/g, " ")}: ${value}`)
+      .join("\n");
+
+    formNote.classList.remove("is-error");
     formNote.textContent =
       form.dataset.successMessage ||
-      "Thank you. This static mockup is ready to connect to a WordPress form or booking CRM.";
+      "Your email app should now open with the inquiry details.";
+
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
 
