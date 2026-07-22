@@ -1276,17 +1276,20 @@ button {
 }
 
 .contact-links {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
   margin-top: 34px;
+  color: rgba(244, 241, 234, 0.56);
+  font-size: 0.86rem;
 }
 
 .contact-links a {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line-light);
+  padding: 4px 0;
+  border-bottom: 1px solid currentColor;
   color: var(--red);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .contact-form {
@@ -1313,6 +1316,11 @@ button {
   font-weight: 900;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+.contact-form span small {
+  font: inherit;
+  opacity: 0.58;
 }
 
 .tutorial-form input,
@@ -1363,6 +1371,13 @@ button {
 
 .contact-form textarea {
   resize: vertical;
+}
+
+.inquiry-expectations {
+  margin: 0;
+  color: rgba(244, 241, 234, 0.68);
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 .form-note {
@@ -3015,6 +3030,10 @@ html.custom-cursor-enabled select {
   padding: 148px 0 92px;
 }
 
+.language-switcher[hidden] {
+  display: none;
+}
+
 .corporate-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.78fr);
@@ -3049,12 +3068,19 @@ html.custom-cursor-enabled select {
 }
 
 .corporate-hero-visual {
-  position: relative;
+  display: grid;
+  gap: 16px;
 }
 
-.corporate-hero-visual .hero-image {
-  width: min(100%, 520px);
-  margin-inline: auto;
+.corporate-media-placeholder {
+  width: 100%;
+  margin: 0;
+}
+
+.corporate-media-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   border: 1px solid var(--line-dark);
   border-radius: 8px;
   background:
@@ -3062,11 +3088,27 @@ html.custom-cursor-enabled select {
     rgba(255, 255, 255, 0.03);
 }
 
+.corporate-media-frame > img,
+.corporate-media-frame > video,
+.corporate-media-frame > button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+.corporate-media-placeholder figcaption {
+  margin-top: 10px;
+  color: rgba(244, 241, 234, 0.68);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .corporate-note-card {
-  position: absolute;
-  right: 0;
-  bottom: 28px;
-  width: min(280px, 76%);
+  width: 100%;
   padding: 20px;
   border: 1px solid rgba(201, 164, 92, 0.44);
   border-radius: 8px;
@@ -3115,9 +3157,14 @@ html.custom-cursor-enabled select {
 }
 
 .corporate-process,
+.corporate-engagements,
 .corporate-outcome,
 .corporate-benefits {
   padding: var(--section-pad) 0;
+}
+
+.corporate-engagements {
+  border-top: 1px solid var(--line-light);
 }
 
 .process-grid,
@@ -3159,6 +3206,13 @@ html.custom-cursor-enabled select {
 .benefit-card p {
   margin: 0;
   color: var(--muted-ink);
+}
+
+.engagement-note {
+  max-width: 720px;
+  margin: 30px auto 0;
+  color: var(--muted-ink);
+  text-align: center;
 }
 
 .corporate-events,
@@ -3238,11 +3292,7 @@ html.custom-cursor-enabled select {
   }
 
   .corporate-note-card {
-    position: relative;
-    right: auto;
-    bottom: auto;
     width: 100%;
-    margin-top: 18px;
   }
 
   .corporate-cta-row,
