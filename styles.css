@@ -3024,10 +3024,10 @@ html.custom-cursor-enabled select {
 
 /* Corporate landing page */
 .corporate-hero {
-  min-height: 100vh;
+  min-height: 92svh;
   display: flex;
   align-items: center;
-  padding: 148px 0 92px;
+  padding: 96px 0 30px;
 }
 
 .language-switcher[hidden] {
@@ -3036,20 +3036,20 @@ html.custom-cursor-enabled select {
 
 .corporate-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.78fr);
-  gap: clamp(42px, 7vw, 110px);
+  grid-template-columns: minmax(0, 1.14fr) minmax(360px, 0.66fr);
+  gap: clamp(36px, 5vw, 82px);
   align-items: center;
 }
 
 .corporate-hero-copy {
-  max-width: 820px;
+  max-width: 1080px;
 }
 
 .corporate-hero h1 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(4.1rem, 9vw, 10.8rem);
-  line-height: 0.86;
+  font-size: clamp(4.1rem, 7.2vw, 8.6rem);
+  line-height: 0.88;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -3156,6 +3156,22 @@ html.custom-cursor-enabled select {
   line-height: 1.55;
 }
 
+.corporate-outcome .section-intro h2,
+.contact .section-intro h2 {
+  font-size: clamp(2.55rem, 4vw, 4.65rem);
+  line-height: 0.98;
+}
+
+.corporate-process .section-intro h2,
+.corporate-events .section-intro h2,
+.corporate-benefits .section-intro h2,
+.corporate-engagements .section-intro h2,
+.corporate-faq .section-intro h2,
+.about-copy h2 {
+  font-size: clamp(2.25rem, 3.35vw, 3.9rem);
+  line-height: 1;
+}
+
 .corporate-process,
 .corporate-engagements,
 .corporate-outcome,
@@ -3206,6 +3222,177 @@ html.custom-cursor-enabled select {
 .benefit-card p {
   margin: 0;
   color: var(--muted-ink);
+}
+
+.process-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 64px);
+  margin: 58px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process-timeline::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--line-light);
+}
+
+.process-step {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  align-content: start;
+}
+
+.process-marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  place-items: center;
+  background: var(--off-white);
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.process-step h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 2vw, 2.2rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.process-step p {
+  margin: 0;
+  color: var(--muted-ink);
+}
+
+.benefit-list {
+  max-width: 1040px;
+  margin: 52px auto 0;
+  border-bottom: 1px solid var(--line-light);
+}
+
+.benefit-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(28px, 6vw, 92px);
+  align-items: baseline;
+  padding: 26px 0;
+  border-top: 1px solid var(--line-light);
+}
+
+.benefit-row h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.benefit-row p {
+  margin: 0;
+  color: var(--muted-ink);
+  font-size: 1.02rem;
+}
+
+.proof-editorial {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(44px, 8vw, 128px);
+  align-items: start;
+}
+
+.proof-copy h2 {
+  font-size: clamp(2.45rem, 3.8vw, 4.35rem);
+  line-height: 0.98;
+}
+
+.proof-copy > p:last-child {
+  max-width: 620px;
+  margin-top: 24px;
+  font-size: clamp(1.05rem, 1.35vw, 1.24rem);
+  line-height: 1.65;
+}
+
+.proof-metric {
+  color: var(--off-white);
+  font-family: var(--font-display);
+  font-size: 1.22em;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.proof-copy .proof-metric {
+  color: var(--gold-strong);
+  font-size: 1.4em;
+}
+
+.proof-evidence-row p .proof-metric {
+  display: inline-block;
+  margin-right: 0.08em;
+}
+
+.proof-evidence {
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.proof-evidence-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 42px);
+  align-items: baseline;
+  padding: 30px 16px 32px;
+  border-top: 1px solid var(--line-dark);
+}
+
+.proof-evidence-row:nth-child(even) {
+  background: rgba(244, 241, 234, 0.025);
+}
+
+.proof-evidence-row h3 {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1.8vw, 1.85rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.proof-evidence-row p {
+  margin: 0;
+  color: rgba(244, 241, 234, 0.75);
+  line-height: 1.6;
+}
+
+.about-copy .button-row {
+  margin-top: 34px;
+}
+
+.about-copy .button-secondary {
+  border-color: rgba(17, 17, 17, 0.28);
+  background: transparent;
+  color: var(--ink);
+}
+
+.about-copy .button-secondary:hover {
+  border-color: var(--gold);
+  background: rgba(201, 164, 92, 0.1);
 }
 
 .engagement-note {
@@ -3272,13 +3459,52 @@ html.custom-cursor-enabled select {
 
   .corporate-hero-grid,
   .outcome-grid,
-  .corporate-two-column {
+  .corporate-two-column,
+  .proof-editorial {
     grid-template-columns: 1fr;
   }
 
   .process-grid,
   .benefit-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 42px;
+    padding-left: 4px;
+  }
+
+  .process-timeline::before {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 25px;
+    width: 1px;
+    height: auto;
+  }
+
+  .process-step {
+    grid-template-columns: 43px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .benefit-row {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .proof-evidence-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-inline: 0;
+  }
+
+  .proof-evidence-row:nth-child(even) {
+    background: transparent;
   }
 }
 
